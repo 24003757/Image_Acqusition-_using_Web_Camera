@@ -47,9 +47,9 @@ import time
 cap = cv2.VideoCapture(0)
 ret, frame = cap.read()
 if ret:
-    cv2.imwrite("harish.jpg", frame)
+    cv2.imwrite("captured_frame.jpg", frame)
 cap.release()
-captured_image = cv2.imread('harish.jpg')
+captured_image = cv2.imread('captured_frame.jpg')
 plt.imshow(captured_image[:,:,::-1])
 plt.title('Captured Frame')
 plt.axis('off')
